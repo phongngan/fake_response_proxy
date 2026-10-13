@@ -1,0 +1,32 @@
+[package]
+name = "windivert-redirect"
+version = "0.1.0"
+edition = "2021"
+description = "Prototype: redirect outbound TCP to a local proxy using WinDivert (auto-installs WinDivert)"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+ctrlc = "3"
+dashmap = "6"
+hex = "0.4"
+libloading = "0.8"
+sha2 = "0.10"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+ureq = { version = "2", features = ["tls"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+dirs = "5"
+
+[target."cfg(windows)".dependencies]
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_System_ProcessStatus",
+    "Win32_UI_Shell",
+] }
+
+[profile.release]
+opt-level = 3
+lto = true

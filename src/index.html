@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Response Proxy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">FR</span>
+      <strong>Fake Response Proxy</strong>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="server">Server</button>
+      <button class="tab" data-tab="rules">Rules</button>
+      <button class="tab" data-tab="redirect">Redirect</button>
+      <button class="tab" data-tab="history">History</button>
+      <button class="tab" data-tab="cert">Certificate</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+    <div class="status">
+      <span class="dot" id="status-dot"></span>
+      <span id="status-label">0/0 listening</span>
+    </div>
+  </header>
+
+  <main id="content"></main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
