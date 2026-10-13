@@ -214,7 +214,6 @@ Build release dùng LTO + strip → binary nhỏ (~7 MB).
 ```
 fake_response_proxy/
 ├── README.md                         ← bạn đang đọc
-├── idea.txt                          ← ý tưởng ban đầu
 ├── package.json                      ← Tauri CLI
 ├── examples/example_script.py        ← mẫu Python response script
 ├── scripts/gen-icons.ps1             ← script sinh icon từ placeholder
@@ -294,4 +293,11 @@ fake_response_proxy/
 
 ## License
 
-MIT (xem `LICENSE` nếu có).
+Phát hành theo **[PolyForm Noncommercial License 1.0.0](LICENSE)** — mã nguồn công khai (source-available) nhưng **không phải** open source theo định nghĩa của OSI.
+
+- ✅ Được phép: dùng cá nhân, nghiên cứu, học tập, thử nghiệm, sử dụng bởi tổ chức giáo dục / phi lợi nhuận / cơ quan nhà nước; sửa đổi và chia sẻ lại (kèm nguyên văn giấy phép và dòng `Required Notice`).
+- ❌ Không được phép nếu chưa có giấy phép riêng: dùng cho mục đích thương mại hoặc trong hoạt động của doanh nghiệp, bán lại, đóng gói vào sản phẩm/dịch vụ thương mại hay mã nguồn đóng.
+
+Cần dùng cho mục đích thương mại? Liên hệ tác giả (phongngan) để xin giấy phép thương mại riêng.
+
+Thành phần bên thứ ba (Tauri, rustls, ... và WinDivert — tải về lúc chạy) giữ nguyên giấy phép gốc của từng dự án.

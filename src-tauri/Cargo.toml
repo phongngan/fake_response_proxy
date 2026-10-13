@@ -2,7 +2,8 @@
 name = "fake-response-proxy"
 version = "0.1.0"
 description = "Local fake response proxy for HTTP/HTTPS"
-authors = ["dainc1"]
+authors = ["phongngan"]
+license = "PolyForm-Noncommercial-1.0.0"
 edition = "2021"
 rust-version = "1.77"
 

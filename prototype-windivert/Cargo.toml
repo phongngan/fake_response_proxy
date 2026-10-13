@@ -2,6 +2,7 @@
 name = "windivert-redirect"
 version = "0.1.0"
 edition = "2021"
+license = "PolyForm-Noncommercial-1.0.0"
 description = "Prototype: redirect outbound TCP to a local proxy using WinDivert (auto-installs WinDivert)"
 
 [dependencies]
